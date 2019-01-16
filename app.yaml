@@ -1,0 +1,5 @@
+runtime: nodejs10
+service: test-icu
+
+env_variables:
+  # NODE_ICU_DATA: './node_modules/full-icu' # ICU disabled, cause GAE deployment started to fail: `node: could not initialize ICU (check NODE_ICU_DATA or --icu-data-dir parameters)`

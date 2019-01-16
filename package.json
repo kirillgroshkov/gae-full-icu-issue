@@ -1,0 +1,22 @@
+{
+  "name": "example",
+  "scripts": {
+    "start": "node ./app.js",
+    "startWithIcu": "NODE_ICU_DATA=./node_modules/full-icu node ./app.js",
+    "deploy": "gcloud app deploy ./app.yaml --project ncbackend-test --version 1 --quiet"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "full-icu": "^1.2.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "10.x.x"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Kirill Groshkov"
+}
